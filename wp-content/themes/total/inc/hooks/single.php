@@ -65,7 +65,8 @@ if (!function_exists('total_single_header')) {
             ?>
             <div class="ht-main-header">
                 <div class="ht-container">
-                    <?php the_title('<h1 class="ht-main-title">', '</h1>'); ?>
+		<!-- SELLATHURAI FIXME -->
+                    <?php the_title('<h1 class="ht-main-title" style="color: #FB5B11;">', '</h1>'); ?>
                     <?php do_action('total_breadcrumbs'); ?>
                 </div>
             </div>

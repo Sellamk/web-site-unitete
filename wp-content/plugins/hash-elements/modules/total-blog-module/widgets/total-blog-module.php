@@ -343,7 +343,10 @@ class TotalBlogModule extends Widget_Base {
                             ?>
                             <div class="het-blog-excerpt">
                                 <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-                                <div class="het-blog-date"><i class="fa fa-calendar-o" aria-hidden="true"></i><?php echo get_the_date(); ?></div>
+				<div class="het-blog-date"><i class="fa fa-calendar-o" aria-hidden="true"></i><?php 
+				/* SELLATHURAI FIXME */
+				 echo current_time('j-F-Y'); 
+				//echo get_the_date(); ?></div>
                                 <?php
                                 if (has_excerpt() && '' != trim(get_the_excerpt())) {
                                     echo '<div class="het-blog-excerpt-text">';
